@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL BUHO 89 . ORG SAS ™</title>
+    <meta name="description" content="Ecosistema 100% colombiano: Soluciones tecnológicas, Tienda Internacional, Datáfonos, Inclusión social y el Hub de Simulación.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Variables y Reset Básico */
+        :root {
+            --buho-dark: #1A1A1A;
+            --buho-gold: #FFC300;
+            --buho-red: #E94560;
+            --buho-light: #F9F9F9;
+            --whatsapp-green: #25D366;
+            --font-family-primary: 'Montserrat', sans-serif;
+            --header-height: 70px;
+            --card-bg: #222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--buho-dark);
+            color: var(--buho-light);
+            font-family: var(--font-family-primary);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            padding-top: var(--header-height);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 { color: var(--buho-gold); margin-bottom: 10px; }
+        h2 { font-size: 2em; font-weight: 700; border-bottom: 3px solid var(--buho-red); display: inline-block; padding-bottom: 5px;}
+        
+        /* --- Header Fijo --- */
+        header {
+            background-color: #0d0d0d;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: var(--buho-gold);
+            text-decoration: none;
+            padding-right: 20px;
+        }
+        header nav {
+            margin-left: auto;
+        }
+        header nav a {
+            color: var(--buho-light);
+            text-decoration: none;
+            padding: 0 12px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: var(--buho-red);
+        }
+        
+        /* --- Botones y CTA --- */
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px 10px 10px 0;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            border: none;
+            white-space: nowrap;
+        }
+        .cta-primary { background-color: var(--buho-red); color: var(--buho-light); }
+        .cta-secondary { background-color: var(--buho-gold); color: var(--buho-dark); }
+        
+        /* --- Secciones y Grid de Pilares --- */
+        section {
+            padding: 80px 0;
+        }
+        #pilares .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .pilar-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 5px solid var(--buho-gold);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .pilar-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .pilar-card i {
+            font-size: 3em;
+            color: var(--buho-red);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container" style="display: flex; align-items: center; width: 100%;">
+            <a href="#hero" class="logo">EL BUHO 89 . ORG SAS 🦉</a>
+            <nav>
+                <a href="#pilares"><i class="fas fa-boxes"></i> Servicios</a>
+                <a href="https://tienda.elbuho89.org"><i class="fas fa-shopping-bag"></i> Tienda</a>
+                <a href="alianzas.php"><i class="fas fa-handshake"></i> Alianzas</a>
+                <a href="nosotros.php"><i class="fas fa-users"></i> Nosotros</a>
+                <a href="contacto.php" style="color: var(--whatsapp-green);"><i class="fab fa-whatsapp"></i> Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" style="min-height: 80vh; display: flex; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('fondo-buho.jpg') center/cover no-repeat; background-size: cover; padding-top: 150px; margin-top: -80px;">
+        <div class="container content" style="max-width: 900px; margin: 0 auto;">
+            <h1 style="color: var(--buho-light); margin-bottom: 20px;">EL BUHO 89™ Tecnología, Comercio Global e Impacto Social.</h1>
+            <p style="font-size: 1.2em; color: rgba(255, 255, 255, 0.9);">El ecosistema colombiano que impulsa tu negocio con soluciones Fintech, te conecta con el comercio internacional y apoya activamente la inclusión y las comunidades de streaming.</p>
+            
+            <a href="tienda.php" class="cta-button cta-primary" style="background-color: var(--buho-red);"><i class="fas fa-store"></i> COMPRAR EN LA TIENDA GLOBAL</a>
+            <a href="alianzas.php" class="cta-button cta-secondary"><i class="fas fa-money-check-alt"></i> VER ALIANZAS Y BENEFICIOS</a>
+        </div>
+    </section>
+
+    <section id="pilares" style="background-color: #121212;">
+        <div class="container" style="text-align: center;">
+            <h2>Nuestros Cuatro Pilares Centrales</h2>
+            <p style="margin-top: 20px; margin-bottom: 40px;">Una compañía diversa construida sobre la tecnología, la responsabilidad y la comunidad.</p>
+            
+            <div class="grid">
+                
+                <div class="pilar-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Fintech & Logística B2B</h3>
+                    <p>Soluciones para tu negocio y tu dia a dia, Extranet de ventas mayoristas y droshiping, números globales mucho y más.</p>
+                    <a href="alianzas.php" class="cta-button cta-primary" style="padding: 8px 15px;">Ver Tech & Alianzas</a>
+                </div>
+                
+                <div class="pilar-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Comercio Nacional e Internacional</h3>
+                    <p>Venta de productos a nivel mundial. Venta de Ropa de segunda (Colombia) y más.</p>
+                    <a href="tienda.php" class="cta-button cta-secondary" style="padding: 8px 15px;">Ir a Tienda Global</a>
+                </div>
+
+                <div class="pilar-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Inclusión & Impacto Social</h3>
+                    <p>Compromiso con la inclusión, apoyo a ONGs y la victoria en Change.org</p>
+                    <a href="nosotros.php" class="cta-button cta-primary" style="padding: 8px 15px;">Ver Impacto</a>
+                </div>
+
+                <div class="pilar-card">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Comunidad & Simulación</h3>
+                    <p>Apoyo a streamers, nuestros bots y sus personalidades y la creacion de nuestra comunidad.</p>
+                    <a href="https://hub.elbuho89.org" target="_blank" class="cta-button cta-secondary" style="padding: 8px 15px;">Visitar Hub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-contacto" style="background-color: var(--buho-red); text-align: center; padding: 50px 0;">
+        <div class="container">
+            <h2 style="color: var(--buho-light); border-bottom: none; margin-bottom: 20px;">Sello de compensación de CO2</h2>
+    <div class="tn-widget">
+        <div id="tree-nation-offset-website"></div>
+        <script src="https://tree-nation.com/widget/website-offset.js"></script>
+        <script>TreeNationOffsetWebsite({code: '97d79ba9db5f1c50', lang: 'es', theme: 'light'}).render('#tree-nation-offset-website');</script>
+    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 40px 0;">
+            <p class="social-links" style="font-size: 1.5em; margin-bottom: 20px;">
+                <a href="https://www.twitch.tv/elbuho89" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.tiktok.com/@elbuho89.org" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.trustindex.io/reviews/elbuho89.org" target="_blank" title="Reseñas"><i class="fas fa-star"></i></a>
+                <a href="https://hub.elbuho89.org" target="_blank" title="Hub de Simulación"><i class="fas fa-truck"></i></a>
+            </p>
+            <p style="margin-bottom: 10px;">
+                <a href="#">Aviso Legal</a> | 
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Términos y Condiciones</a>
+            </p>
+            <p style="margin-top: 15px;">© 2026 EL BUHO 89 . ORG SAS. Empresa Colombiana. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
